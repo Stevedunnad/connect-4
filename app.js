@@ -117,9 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //if they do, player-one is passed as the winner
         result.innerHTML = 'Player one wins!'
         //remove ability to change result
-      }
-      //now check to see if they all have the classname player two
-      else if (square1.classList.contains('player-two') &&
+      } else if (square1.classList.contains('player-two') &&
         square2.classList.contains('player-two') &&
         square3.classList.contains('player-two') &&
         square4.classList.contains('player-two')) {
@@ -129,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  //add an event listener to each square that will trigger the checkBoard function on click
+
   squares.forEach(square => square.addEventListener('click', checkBoard))
 
 })
