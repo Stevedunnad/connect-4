@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   for (var i = 0, len = squares.length; i < len; i++)
 
     (function (index) {
-      //add an onclick to each square in your grid
       squares[i].onclick = function () {
         //if the square below your current square is taken, you can go ontop of it
         if (squares[index + 7].classList.contains('taken')) {
